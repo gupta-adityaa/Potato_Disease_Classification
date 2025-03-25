@@ -20,6 +20,24 @@ The dataset is sourced from **PlantVillage** and consists of:
 - 📌 **Late Blight Images**
 - 📌 **Healthy Potato Leaf Images**
 
+### **Example Images from Dataset**
+Below are sample images representing different types of potato diseases:
+
+#### **Early Blight**
+Early blight is caused by the fungus *Alternaria solani*, leading to dark brown or black concentric ring spots on leaves, usually starting from the lower leaves.
+
+<p align="center">
+  <img src="Early_Blight.jpg" alt="Early Blight" width="400" height="300">
+</p>
+
+#### **Late Blight**
+Late blight is caused by the *Phytophthora infestans* pathogen, leading to water-soaked lesions that turn brown and spread rapidly across the plant, often causing total crop failure.
+
+<p align="center">
+  <img src="Late_Blight.jpg" alt="Late Blight" width="400" height="300">
+</p>
+
+
 ## **Model Architecture**
 
 The model follows a **CNN-based approach**:
@@ -32,7 +50,7 @@ The model follows a **CNN-based approach**:
 ## **Implementation Details**
 
 - **Programming Language**: Python (TensorFlow, Keras)
-- **Libraries Used**: NumPy, OpenCV, Matplotlib, ImageDataGenerator
+- **Libraries Used**: NumPy, Matplotlib, ImageDataGenerator
 - **Model Input Size**: 224x224 pixels
 - **Loss Function**: Categorical Cross-Entropy
 - **Optimizer**: Adam
@@ -73,6 +91,4 @@ def preprocess_image(img_path, target_size=(224, 224)):
 - 🚀 **Improve accuracy with more advanced architectures (e.g., EfficientNet, ResNet)**
 - 🚀 **Deploy as a Web-based App for farmers**
 - 🚀 **Expand the dataset for better generalization**
-
-
 
